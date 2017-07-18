@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var userNameOutlet: UITextField!
@@ -21,11 +21,10 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUIElementProperties()
-        
-
         self.forgetPassWindow.isHidden = true
         
-        
+        userNameOutlet.delegate = self
+        passwordOutlet.delegate = self
                 
     }
     
@@ -72,6 +71,15 @@ class SignInViewController: UIViewController {
 
     @IBAction func signUpAction(_ sender: Any) {
         
+    }
+    
+    /**
+      Delegates below
+     */
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
 }
