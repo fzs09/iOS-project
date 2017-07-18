@@ -1,0 +1,6 @@
+framework module Pods_ProjectMobil {
+  umbrella header "Pods-ProjectMobil-umbrella.h"
+
+  export *
+  module * { export * }
+}
