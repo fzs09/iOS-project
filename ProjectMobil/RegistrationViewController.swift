@@ -12,11 +12,17 @@ import Alamofire
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var usernameTF: UITextField?
+    
     @IBOutlet weak var emailTF: UITextField?
+    
     @IBOutlet weak var phoneTF: UITextField?
+    
     @IBOutlet weak var passwordTF: UITextField?
+    
     @IBOutlet weak var confirmPasswordTF: UITextField?
+    
     @IBOutlet weak var stackview: UIStackView?
+    
     @IBOutlet weak var signInBtn: UIButton?
 
     override func viewDidLoad() {
