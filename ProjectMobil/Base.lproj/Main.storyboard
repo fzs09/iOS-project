@@ -184,7 +184,7 @@
                         <outlet property="passwordOutlet" destination="ku5-pg-Scl" id="OQP-Nw-0mG"/>
                         <outlet property="signUpOutlet" destination="385-7h-RJP" id="uMK-Cd-6oR"/>
                         <outlet property="userNameOutlet" destination="Yco-yT-FhG" id="Bfh-ZS-DbW"/>
-                        <segue destination="nEC-NC-3V9" kind="show" identifier="login" id="GgY-7r-bGY"/>
+                        <segue destination="u81-Ok-zFa" kind="show" identifier="login" id="dlj-Mr-zVf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -361,7 +361,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2Ze-QK-Jto">
-                                <rect key="frame" x="0.0" y="-44" width="375" height="711"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="sIb-0G-0BZ">
                                     <size key="itemSize" width="174" height="190"/>
@@ -405,21 +405,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-cJ-fdR">
-                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aic-f3-6cW" firstAttribute="top" secondItem="pcZ-cJ-fdR" secondAttribute="bottom" id="CHq-yS-fRT"/>
                             <constraint firstItem="aic-f3-6cW" firstAttribute="top" secondItem="2Ze-QK-Jto" secondAttribute="bottom" id="Dod-Te-qyh"/>
                             <constraint firstItem="2Ze-QK-Jto" firstAttribute="leading" secondItem="w3r-kd-Alp" secondAttribute="leading" id="Gf3-Gf-I5s"/>
-                            <constraint firstItem="pcZ-cJ-fdR" firstAttribute="height" secondItem="w3r-kd-Alp" secondAttribute="height" multiplier="0.1" id="LYu-Uc-5zD"/>
                             <constraint firstAttribute="trailing" secondItem="2Ze-QK-Jto" secondAttribute="trailing" id="SgN-X8-AFg"/>
                             <constraint firstItem="2Ze-QK-Jto" firstAttribute="top" secondItem="v1R-dL-C6f" secondAttribute="bottom" constant="-64" id="ZMz-jQ-VsK"/>
-                            <constraint firstItem="pcZ-cJ-fdR" firstAttribute="width" secondItem="w3r-kd-Alp" secondAttribute="width" id="exl-2u-p3X"/>
-                            <constraint firstItem="pcZ-cJ-fdR" firstAttribute="centerX" secondItem="w3r-kd-Alp" secondAttribute="centerX" id="muS-X1-nUd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="DashBoard" id="L4t-30-Kus">
@@ -638,6 +630,6 @@
         <image name="nature_2" width="259" height="194"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GgY-7r-bGY"/>
+        <segue reference="dlj-Mr-zVf"/>
     </inferredMetricsTieBreakers>
 </document>
