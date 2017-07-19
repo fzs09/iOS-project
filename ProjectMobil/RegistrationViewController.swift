@@ -96,5 +96,13 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         signInBtn?.layer.borderColor = colorWhite.cgColor
     }
     
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        utils.moveTextField(view: self.view, textfield: textField, moveDistance: 250, up: true)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        utils.moveTextField(view: self.view, textfield: textField, moveDistance: 250, up: false)
+    }
 
 }

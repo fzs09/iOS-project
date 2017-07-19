@@ -39,8 +39,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
-    
     func moveTextField(textfield: UITextField, moveDistance: Int, up: Bool) {
         let duration = 0.3
         let distance: CGFloat = CGFloat(up ? -moveDistance: moveDistance)
@@ -51,6 +49,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.view.frame = self.view.frame.offsetBy(dx: 0, dy: distance)
         UIView.commitAnimations()
     }
+    
     
     
     @IBAction func forgetPassAction(_ sender: Any) {
