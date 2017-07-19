@@ -4,5 +4,6 @@ use_frameworks!
 
 target 'ProjectMobil' do
     pod 'Alamofire', '~> 4.4'
+    pod 'SwiftyJSON'
 end
 
