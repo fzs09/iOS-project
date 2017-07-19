@@ -75,10 +75,14 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             "password": pass!
         ]
         Alamofire.request("http://192.168.1.222/mobil_app/user_login_api.php", method: .post, parameters: parameters).responseJSON { response in
-            print(response)
-            let jsonData = JSON(response)
-            print(jsonData)
-            print(jsonData["success"])
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print(value)
+            case .failure(let error):
+                print(error)
+                
+            }
         }
         
     }
