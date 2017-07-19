@@ -30,8 +30,8 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
         
-        signInBtn?.layer.borderWidth = 1
-        signInBtn?.layer.borderColor = UIColor.white.cgColor
+        
+        setUIElementsProperty()
         
         for field in stackview?.subviews as! [UITextField] {
             field.delegate = self
@@ -86,5 +86,13 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
+    func setUIElementsProperty() {
+    
+        let colorWhite : UIColor = UIColor.white
+        signInBtn?.layer.borderWidth = 1
+        signInBtn?.layer.borderColor = colorWhite.cgColor
+    }
+    
 
 }
