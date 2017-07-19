@@ -184,6 +184,7 @@
                         <outlet property="passwordOutlet" destination="ku5-pg-Scl" id="OQP-Nw-0mG"/>
                         <outlet property="signUpOutlet" destination="385-7h-RJP" id="uMK-Cd-6oR"/>
                         <outlet property="userNameOutlet" destination="Yco-yT-FhG" id="Bfh-ZS-DbW"/>
+                        <segue destination="nEC-NC-3V9" kind="show" identifier="login" id="GgY-7r-bGY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -360,7 +361,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2Ze-QK-Jto">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-44" width="375" height="711"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="sIb-0G-0BZ">
                                     <size key="itemSize" width="174" height="190"/>
@@ -611,7 +612,7 @@
         <!--Navigation Controller-->
         <scene sceneID="D58-Mm-LeX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u81-Ok-zFa" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="u81-Ok-zFa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tgg-xb-9GU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -636,4 +637,7 @@
         <image name="menu" width="28" height="20"/>
         <image name="nature_2" width="259" height="194"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GgY-7r-bGY"/>
+    </inferredMetricsTieBreakers>
 </document>

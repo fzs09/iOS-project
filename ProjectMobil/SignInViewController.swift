@@ -14,6 +14,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
 
     let utils: Utils = Utils()
     
+//    var dashboardViewController : DashboardViewController!
+    
     @IBOutlet weak var userNameOutlet: UITextField!
     @IBOutlet weak var forgetPassWindow: UIView!
     @IBOutlet weak var passwordOutlet: UITextField!
@@ -82,7 +84,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
                 if json["success"] == "true" {
                     // perform segue here.
                     print(json)
-                    var dashboardView : DashboardViewController = self.storyboard?.instantiateViewController(withIdentifier: "dashboardViewController") as! DashboardViewController
+                    self.performSegue(withIdentifier: "login", sender: nil)
+                
                     
                 }
 

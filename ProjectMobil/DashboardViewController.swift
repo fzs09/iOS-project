@@ -21,7 +21,7 @@ class DashboardViewController: UIViewController , UICollectionViewDelegate, UICo
    
     var dashBoardCollectionViewImages = ["Store Locator", "Service Appoinments", "Find your Oil", "Buy Now", "Reminders", "Calculators(EMI & Mileage)", "Mobil Automotive", "Car Maintenance Tips", "Current campaigns", "SOS"]
     
-    var dashBoardCollectionViewText = ["LubriCant Store Locator", "Service Appoinments", "Find your Oil", "Buy Now", "Reminders", "Calculators(EMI & Mileage)", "Mobil Automotive Products", "Car Maintenance Tips", "Current campaigns", "SOS/Helpline"]
+    var dashBoardCollectionViewText = ["Lubricant Store Locator", "Service Appoinments", "Find your Oil", "Buy Now", "Reminders", "Calculators(EMI & Mileage)", "Mobil Automotive Products", "Car Maintenance Tips", "Current campaigns", "SOS/Helpline"]
     
     var identifier = [String]()
     
