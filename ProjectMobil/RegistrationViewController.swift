@@ -11,6 +11,8 @@ import Alamofire
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
+    let utils: Utils = Utils()
+    
     @IBOutlet weak var usernameTF: UITextField?
     
     @IBOutlet weak var emailTF: UITextField?
@@ -85,6 +87,14 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        utils.moveTextField(view: self.view, textfield: textField, moveDistance: 250, up: true)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        utils.moveTextField(view: self.view, textfield: textField, moveDistance: 250, up: false)
     }
 
 }

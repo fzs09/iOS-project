@@ -8,8 +8,10 @@
 
 import UIKit
 import Alamofire
+
 class SignInViewController: UIViewController, UITextFieldDelegate {
 
+    let utils: Utils = Utils()
     
     @IBOutlet weak var userNameOutlet: UITextField!
     @IBOutlet weak var forgetPassWindow: UIView!
@@ -38,6 +40,17 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func moveTextField(textfield: UITextField, moveDistance: Int, up: Bool) {
+        let duration = 0.3
+        let distance: CGFloat = CGFloat(up ? -moveDistance: moveDistance)
+        
+        UIView.beginAnimations("animateTextField", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(duration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: distance)
+        UIView.commitAnimations()
     }
     
     
@@ -80,6 +93,14 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        utils.moveTextField(view: self.view, textfield: textField, moveDistance: 250, up: true)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        utils.moveTextField(view: self.view, textfield: textField, moveDistance: 250, up: false)
     }
 
 }
