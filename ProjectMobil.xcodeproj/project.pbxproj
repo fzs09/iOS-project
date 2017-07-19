@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D28F1C41F1E333E00C8DAA0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D28F1C31F1E333E00C8DAA0 /* RegistrationViewController.swift */; };
+		2DE4F3001F1F54A800F39E21 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE4F2FF1F1F54A800F39E21 /* Utils.swift */; };
 		6D7C4B3A0826AC637FA14098 /* Pods_ProjectMobil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A93823D5A6E73BC2B76C3BE /* Pods_ProjectMobil.framework */; };
 		8A45A6881F1CA62A00B4C65B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45A6871F1CA62A00B4C65B /* AppDelegate.swift */; };
 		8A45A68A1F1CA62A00B4C65B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45A6891F1CA62A00B4C65B /* SignInViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		2D28F1C31F1E333E00C8DAA0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		2DE4F2FF1F1F54A800F39E21 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4147E358AFC30A5F6B08D73F /* Pods-ProjectMobil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMobil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectMobil/Pods-ProjectMobil.debug.xcconfig"; sourceTree = "<group>"; };
 		8A45A6841F1CA62A00B4C65B /* ProjectMobil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMobil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A45A6871F1CA62A00B4C65B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				8A45A6961F1CA62A00B4C65B /* Info.plist */,
 				8A45A68E1F1CA62A00B4C65B /* ProjectMobil.xcdatamodeld */,
 				2D28F1C31F1E333E00C8DAA0 /* RegistrationViewController.swift */,
+				2DE4F2FF1F1F54A800F39E21 /* Utils.swift */,
 			);
 			path = ProjectMobil;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE4F3001F1F54A800F39E21 /* Utils.swift in Sources */,
 				8A45A6901F1CA62A00B4C65B /* ProjectMobil.xcdatamodeld in Sources */,
 				8A45A68A1F1CA62A00B4C65B /* SignInViewController.swift in Sources */,
 				2D28F1C41F1E333E00C8DAA0 /* RegistrationViewController.swift in Sources */,

@@ -11,6 +11,8 @@ import Alamofire
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
+    let utils: Utils = Utils()
+    
     @IBOutlet weak var usernameTF: UITextField?
     
     @IBOutlet weak var emailTF: UITextField?
