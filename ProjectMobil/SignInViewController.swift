@@ -27,7 +27,9 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
         userNameOutlet.delegate = self
         passwordOutlet.delegate = self
-                
+        
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -35,11 +37,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
             forgetPassWindow.isHidden = true
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func moveTextField(textfield: UITextField, moveDistance: Int, up: Bool) {
@@ -52,6 +49,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.view.frame = self.view.frame.offsetBy(dx: 0, dy: distance)
         UIView.commitAnimations()
     }
+    
     
     
     @IBAction func forgetPassAction(_ sender: Any) {
