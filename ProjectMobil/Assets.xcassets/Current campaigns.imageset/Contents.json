@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Current campaigns.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Current campaigns.png",
       "scale" : "2x"
     },
     {

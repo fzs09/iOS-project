@@ -624,7 +624,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Store Locator" width="240" height="240"/>
+        <image name="Store Locator" width="120" height="120"/>
         <image name="background" width="84" height="150"/>
         <image name="car" width="29" height="30"/>
         <image name="footerBackground" width="540" height="75"/>

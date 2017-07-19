@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Service Appoinments.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Service Appoinments.png",
       "scale" : "2x"
     },
     {

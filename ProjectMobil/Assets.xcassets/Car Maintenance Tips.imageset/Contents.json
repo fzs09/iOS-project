@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Car Maintenance Tips.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Car Maintenance Tips.png",
       "scale" : "2x"
     },
     {
