@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  ProjectMobil
@@ -78,7 +79,13 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print(value)
+                print(json)
+                print(json["success"])
+                if json["success"] == "true" {
+                    // perform segue here.
+                    print("perform segue here.")
+                }
+
             case .failure(let error):
                 print(error)
                 
