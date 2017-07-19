@@ -58,7 +58,6 @@
                                 </state>
                                 <connections>
                                     <action selector="signInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JlC-UC-ye2"/>
-                                    <segue destination="u81-Ok-zFa" kind="show" identifier="logInSegue" id="hz6-aj-aSY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNc-2e-o13">
@@ -66,9 +65,6 @@
                                 <state key="normal" title="Continue as Guest">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="u81-Ok-zFa" kind="show" identifier="guestLogInSegue" id="456-IL-lKy"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yco-yT-FhG">
                                 <rect key="frame" x="9" y="450.5" width="357" height="33.5"/>
@@ -354,7 +350,7 @@
         <!--DashBoard-->
         <scene sceneID="PJn-Mf-e1X">
             <objects>
-                <viewController id="nEC-NC-3V9" customClass="DashboardViewController" customModule="ProjectMobil" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dashboardViewController" id="nEC-NC-3V9" customClass="DashboardViewController" customModule="ProjectMobil" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v1R-dL-C6f"/>
                         <viewControllerLayoutGuide type="bottom" id="aic-f3-6cW"/>
@@ -408,13 +404,21 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-cJ-fdR">
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aic-f3-6cW" firstAttribute="top" secondItem="pcZ-cJ-fdR" secondAttribute="bottom" id="CHq-yS-fRT"/>
                             <constraint firstItem="aic-f3-6cW" firstAttribute="top" secondItem="2Ze-QK-Jto" secondAttribute="bottom" id="Dod-Te-qyh"/>
                             <constraint firstItem="2Ze-QK-Jto" firstAttribute="leading" secondItem="w3r-kd-Alp" secondAttribute="leading" id="Gf3-Gf-I5s"/>
+                            <constraint firstItem="pcZ-cJ-fdR" firstAttribute="height" secondItem="w3r-kd-Alp" secondAttribute="height" multiplier="0.1" id="LYu-Uc-5zD"/>
                             <constraint firstAttribute="trailing" secondItem="2Ze-QK-Jto" secondAttribute="trailing" id="SgN-X8-AFg"/>
                             <constraint firstItem="2Ze-QK-Jto" firstAttribute="top" secondItem="v1R-dL-C6f" secondAttribute="bottom" constant="-64" id="ZMz-jQ-VsK"/>
+                            <constraint firstItem="pcZ-cJ-fdR" firstAttribute="width" secondItem="w3r-kd-Alp" secondAttribute="width" id="exl-2u-p3X"/>
+                            <constraint firstItem="pcZ-cJ-fdR" firstAttribute="centerX" secondItem="w3r-kd-Alp" secondAttribute="centerX" id="muS-X1-nUd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="DashBoard" id="L4t-30-Kus">
@@ -632,7 +636,4 @@
         <image name="menu" width="28" height="20"/>
         <image name="nature_2" width="259" height="194"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="hz6-aj-aSY"/>
-    </inferredMetricsTieBreakers>
 </document>
