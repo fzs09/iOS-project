@@ -8,6 +8,8 @@
 
 import UIKit
 import  GoogleMaps
+import  Alamofire
+import SwiftyJSON
 
 class SegmentViewController: UIViewController, GMSMapViewDelegate, UITableViewDelegate, UITableViewDataSource {
 
@@ -19,6 +21,9 @@ class SegmentViewController: UIViewController, GMSMapViewDelegate, UITableViewDe
         super.viewDidLoad()
         showMap()
         mapViewOutlet.isHidden = true
+        getAllAreaCode()
+        //getDistrictList()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -79,6 +84,36 @@ class SegmentViewController: UIViewController, GMSMapViewDelegate, UITableViewDe
        
         return cell
     }
+    
+    func getAllAreaCode() {
+    
+        Alamofire.request("http://192.168.1.222/mobil_app/get_info.php", method: .post).responseJSON{ response in
+        
+            print(response)
+        }
+    }
+    
+    func getDistrictList()  {
+        
+        Alamofire.request("http://192.168.1.222/mobil_app/get_district.php", method: .post).responseJSON{ response in
+            
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                
+                print(json["districts_info"])
+                
+                
+            case .failure(let error):
+                print(error)
+                
+            }
+        }
+    }
+    
+
+    
+    
  
 
 }

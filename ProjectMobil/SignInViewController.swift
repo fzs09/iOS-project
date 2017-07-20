@@ -14,12 +14,15 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
 
     let utils: Utils = Utils()
     
+    
 //    var dashboardViewController : DashboardViewController!
     
     @IBOutlet weak var userNameOutlet: UITextField!
     @IBOutlet weak var forgetPassWindow: UIView!
     @IBOutlet weak var passwordOutlet: UITextField!
     
+    
+    @IBOutlet weak var usernameForForgetPass: UITextField!
     @IBOutlet weak var signUpOutlet: UIButton!
     @IBOutlet weak var forgetPassOutlet: UIButton!
     @IBOutlet weak var backgroundOutlet: UIImageView!
@@ -30,6 +33,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
         userNameOutlet.delegate = self
         passwordOutlet.delegate = self
+        usernameForForgetPass.delegate = self
         
         
         
@@ -99,6 +103,27 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func signUpAction(_ sender: Any) {
         
+    }
+    
+    @IBAction func sendPasswordAction(_ sender: Any) {
+        
+        let user = usernameForForgetPass.text
+        let parameters: Parameters = [
+            "username": user!,
+        ]
+        Alamofire.request("http://192.168.1.222/mobil_app/user_forget_pass_api.php", method: .post, parameters: parameters).responseJSON { response in
+            
+            print(response)
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print(json)
+                
+            case .failure(let error):
+                print(error)
+                
+            }
+        }
     }
     
     /**
