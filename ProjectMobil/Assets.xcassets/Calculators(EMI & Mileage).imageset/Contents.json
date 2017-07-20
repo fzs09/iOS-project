@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Calculators(EMI & Mileage).png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Calculators(EMI & Mileage).png",
       "scale" : "2x"
     },
     {
