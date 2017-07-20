@@ -16,6 +16,10 @@
 		2DB490C31F1F5B95009C992D /* LubriCantStoreLocatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB490BD1F1F5B95009C992D /* LubriCantStoreLocatorViewController.swift */; };
 		2DE4F3001F1F54A800F39E21 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE4F2FF1F1F54A800F39E21 /* Utils.swift */; };
 		6D7C4B3A0826AC637FA14098 /* Pods_ProjectMobil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A93823D5A6E73BC2B76C3BE /* Pods_ProjectMobil.framework */; };
+		8A12164F1F20822E001C3F5D /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12164E1F20822E001C3F5D /* SegmentViewController.swift */; };
+		8A1216511F208804001C3F5D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1216501F208804001C3F5D /* MapKit.framework */; };
+		8A1216571F209774001C3F5D /* TableViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1216561F209774001C3F5D /* TableViewConfig.swift */; };
+		8A1216591F209792001C3F5D /* CellOfTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1216581F209792001C3F5D /* CellOfTableView.swift */; };
 		8A45A6881F1CA62A00B4C65B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45A6871F1CA62A00B4C65B /* AppDelegate.swift */; };
 		8A45A68A1F1CA62A00B4C65B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45A6891F1CA62A00B4C65B /* SignInViewController.swift */; };
 		8A45A68D1F1CA62A00B4C65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A45A68B1F1CA62A00B4C65B /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		2DB490BD1F1F5B95009C992D /* LubriCantStoreLocatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LubriCantStoreLocatorViewController.swift; sourceTree = "<group>"; };
 		2DE4F2FF1F1F54A800F39E21 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4147E358AFC30A5F6B08D73F /* Pods-ProjectMobil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMobil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectMobil/Pods-ProjectMobil.debug.xcconfig"; sourceTree = "<group>"; };
+		8A12164E1F20822E001C3F5D /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
+		8A1216501F208804001C3F5D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8A1216561F209774001C3F5D /* TableViewConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewConfig.swift; sourceTree = "<group>"; };
+		8A1216581F209792001C3F5D /* CellOfTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellOfTableView.swift; sourceTree = "<group>"; };
 		8A45A6841F1CA62A00B4C65B /* ProjectMobil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMobil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A45A6871F1CA62A00B4C65B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A45A6891F1CA62A00B4C65B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1216511F208804001C3F5D /* MapKit.framework in Frameworks */,
 				6D7C4B3A0826AC637FA14098 /* Pods_ProjectMobil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,9 +142,9 @@
 			children = (
 				8A45A6871F1CA62A00B4C65B /* AppDelegate.swift */,
 				8A45A6891F1CA62A00B4C65B /* SignInViewController.swift */,
-				8A45A68B1F1CA62A00B4C65B /* Main.storyboard */,
 				8A45A6911F1CA62A00B4C65B /* Assets.xcassets */,
 				8A45A6931F1CA62A00B4C65B /* LaunchScreen.storyboard */,
+				8A45A68B1F1CA62A00B4C65B /* Main.storyboard */,
 				8A45A6961F1CA62A00B4C65B /* Info.plist */,
 				8A45A68E1F1CA62A00B4C65B /* ProjectMobil.xcdatamodeld */,
 				2D28F1C31F1E333E00C8DAA0 /* RegistrationViewController.swift */,
@@ -146,6 +155,9 @@
 				2DB490BB1F1F5B95009C992D /* MenuTableViewCell.swift */,
 				2DB490BC1F1F5B95009C992D /* FindingOilViewController.swift */,
 				2DB490BD1F1F5B95009C992D /* LubriCantStoreLocatorViewController.swift */,
+				8A12164E1F20822E001C3F5D /* SegmentViewController.swift */,
+				8A1216561F209774001C3F5D /* TableViewConfig.swift */,
+				8A1216581F209792001C3F5D /* CellOfTableView.swift */,
 			);
 			path = ProjectMobil;
 			sourceTree = "<group>";
@@ -171,6 +183,7 @@
 		C148471DBD4515C830076F66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A1216501F208804001C3F5D /* MapKit.framework */,
 				8A93823D5A6E73BC2B76C3BE /* Pods_ProjectMobil.framework */,
 			);
 			name = Frameworks;
@@ -249,6 +262,11 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 8H2853YWUR;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8A45A69A1F1CA62A00B4C65B = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -366,12 +384,15 @@
 				2DB490BF1F1F5B95009C992D /* DashboardViewController.swift in Sources */,
 				2DB490BE1F1F5B95009C992D /* DashboardCollectionViewCell.swift in Sources */,
 				2DB490C21F1F5B95009C992D /* FindingOilViewController.swift in Sources */,
+				8A1216591F209792001C3F5D /* CellOfTableView.swift in Sources */,
+				8A12164F1F20822E001C3F5D /* SegmentViewController.swift in Sources */,
 				2DB490C31F1F5B95009C992D /* LubriCantStoreLocatorViewController.swift in Sources */,
 				8A45A6901F1CA62A00B4C65B /* ProjectMobil.xcdatamodeld in Sources */,
 				8A45A68A1F1CA62A00B4C65B /* SignInViewController.swift in Sources */,
 				2DB490C11F1F5B95009C992D /* MenuTableViewCell.swift in Sources */,
 				2D28F1C41F1E333E00C8DAA0 /* RegistrationViewController.swift in Sources */,
 				8A45A6881F1CA62A00B4C65B /* AppDelegate.swift in Sources */,
+				8A1216571F209774001C3F5D /* TableViewConfig.swift in Sources */,
 				2DB490C01F1F5B95009C992D /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
